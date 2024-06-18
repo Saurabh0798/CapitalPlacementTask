@@ -1,8 +1,11 @@
-﻿namespace CapitalPlacementTask.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CapitalPlacementTask.Models
 {
     public class ProgramDetails
     {
-        public int Id { get; set; }
+        [Key]
+        public int ProgramId { get; set; }
         public string Title {  get; set; }
         public string Description { get; set; }
 
